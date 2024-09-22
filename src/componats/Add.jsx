@@ -1,10 +1,16 @@
 import React from 'react'
 
 function Add() {
+
+ const number = [1,2,3,4,5,6]   
   return (
-    <div>
-      <h1>I am Add Componats!</h1>
-    </div>
+ <>
+{number.map((number) => ( 
+  <ul key={Math.random() * 10}>
+      <li>{number}</li>
+  </ul>
+))}
+ </>
   )
 }
 
